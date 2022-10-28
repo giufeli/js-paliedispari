@@ -24,20 +24,39 @@ bottoneVerify.addEventListener('click', function (){
 const bottoneNumero = document.getElementById("buttonNumero")
 
 bottoneNumero.addEventListener('click', function (){
-    numeroInserito = document.getElementById("numero").value;
+    numeroInserito = Number(document.getElementById("numero").value);
     paroDisparo = document.getElementById("genere");
     numeroComputer = (Math.floor(Math.random() * 5) + 1);
 
-    console.log(numeroInserito);
-    console.log(numeroComputer)
+	console.log('Hai scelto il numero ' + numeroInserito);
+
+    console.log('Il computer giocherà con il numero ' + numeroComputer)
     
     function somma(num1, num2){
         return(num1 + num2);
     }
 
-    console.log(somma(numeroInserito, numeroComputer)); 
+    const numeroRisultato = (somma(numeroInserito, numeroComputer))
+    console.log('La somma è: ' + numeroRisultato)
     
+    function isEven(number) {
+        if (number % 2) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    if (isEven(numeroRisultato)) {
+        console.log('Il risultato della somma è pari');
+    } else {
+        console.log('Il risultato della somma è dispari');
+    }
+    
+    console.log(paroDisparo)
 })
+
+
 
 
 

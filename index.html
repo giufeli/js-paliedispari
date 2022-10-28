@@ -24,7 +24,12 @@
             <h1>Gioco dei numeri Pari o Dispari</h1>
         </div>
         <div class="row">
-            <div class="col-12">               
+            <div class="col-12">
+                <label for="cars">Scegli se giocare con un numero paro o disparo</label>
+                <select id="cars" name="carlist" form="carform">
+                    <option value="paro">Paro</option>
+                    <option value="disparo">Disparo</option>
+                </select>                       
                 <input type="text" id="numero" placeholder="Inserisci numero da 1 a 5">
                 <button class="btn btn-primary" type="submit" id="buttonNumero">Gioca</button>    
             </div>
