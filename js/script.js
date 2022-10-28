@@ -25,18 +25,17 @@ const bottoneNumero = document.getElementById("buttonNumero")
 
 bottoneNumero.addEventListener('click', function (){
     numeroInserito = document.getElementById("numero").value;
-    paroDisparo = document.getElementById("genere").value;
+    paroDisparo = document.getElementById("genere");
     numeroComputer = (Math.floor(Math.random() * 5) + 1);
 
     console.log(numeroInserito);
     console.log(numeroComputer)
     
-    
     function somma(num1, num2){
         return(num1 + num2);
     }
 
-    console.log(somma(numeroInserito + numeroComputer)); 
+    console.log(somma(numeroInserito, numeroComputer)); 
     
 })
 
