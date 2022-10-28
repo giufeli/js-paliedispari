@@ -1,7 +1,7 @@
 const bottoneVerify = document.getElementById("button")
-parolaInserita = document.getElementById("testo").value;
+
 bottoneVerify.addEventListener('click', function (){
-    
+    parolaInserita = document.getElementById("testo").value;
     if (isPali(parolaInserita)){
         alert( 'Questa parola è palindrome!');
         console.log( 'Questa parola è palindrome!');
@@ -22,7 +22,6 @@ bottoneVerify.addEventListener('click', function (){
 
 
 const bottoneNumero = document.getElementById("buttonNumero")
-
 
 bottoneNumero.addEventListener('click', function (){
     numeroInserito = document.getElementById("numero").value;
